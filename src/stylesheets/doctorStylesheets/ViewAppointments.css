@@ -1,0 +1,182 @@
+page {
+  background: white;
+  display: block;
+  border: 1.5px solid var(--borderColor);
+  border-radius: 8px;
+  width: 90%;
+}
+page[size="A4"] {
+  width: 21cm;
+  height: 29.7cm;
+}
+page[size="A4"][layout="portrait"] {
+  width: 29.7cm;
+  height: 21cm;
+}
+
+@media print {
+  body,
+  page {
+    margin: 0;
+    box-shadow: 0;
+  }
+}
+
+.appointment-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.appointment-view .appointment-status {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: end;
+}
+
+.tracking-id-btn {
+  background: white;
+  border: 1.5px solid var(--borderColor);
+  margin: 1rem 0;
+}
+
+.tracking-id-btn:hover {
+  color: var(--textColor) !important;
+  background: var(--bgHoverColor) !important;
+  border-color: var(--borderColor) !important;
+}
+
+.appointment-info .appointment-heading {
+  text-align: center;
+  color: var(--textColor);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.appointment-info .appointment-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--textColor);
+}
+
+.doctor-info .appointment-heading {
+  margin: 1rem 0;
+}
+
+.patient-info .appointment-heading {
+  margin: 1rem 0;
+}
+
+.doctor-info .doctor-data {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.patient-info .patient-data {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.appointment-para {
+  text-align: justify;
+  font-size: 1rem;
+  color: var(--textColor);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  page {
+    border: none;
+    border-radius: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .appointment-view {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .appointment-view .appointment-status {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: start;
+    margin: 1rem 0;
+  }
+
+  .appointment-view .appointment-status p {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .appointment-info .appointment-heading {
+    font-size: 1.25rem;
+  }
+
+  .appointment-info .appointment-text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .doctor-info .appointment-heading {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  .patient-info .appointment-heading {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  .doctor-info .doctor-data {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .patient-info .patient-data {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .patient-info .patient-data h4 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .patient-info .patient-data .appointment-para {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .doctor-info .doctor-data .doc-detail {
+    text-align: center;
+  }
+}
+
+@media (max-width: 476px) {
+  .patient-info .patient-data .appointment-para {
+    flex-direction: column;
+    gap: 0;
+  }
+}

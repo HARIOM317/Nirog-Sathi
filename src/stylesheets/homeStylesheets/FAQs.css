@@ -1,0 +1,28 @@
+/* ----- FAQs - Accordion Section ----- */
+.faq-section .faq-heading {
+  text-align: left;
+  color: var(--primaryColor);
+}
+
+.accordion .item {
+  color: var(--textLight);
+  background: #ffffff;
+  border: 1px solid var(--borderColor);
+  border-radius: 8px;
+}
+
+.accordion .item .accordion-header button {
+  box-shadow: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--textColor);
+  background: #ffffff;
+  border-radius: 8px !important;
+}
+
+.accordion .item .accordion-body {
+  margin: 0 1rem;
+  padding: 8px;
+  font-size: 14px;
+  background: #ffffff;
+}

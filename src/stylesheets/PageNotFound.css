@@ -1,0 +1,52 @@
+.page-not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.page-not-found .lottie-animation {
+  width: 80vh;
+  margin: 0 2rem;
+}
+
+.page-not-found h2 {
+  color: var(--textColor);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.page-not-found p {
+  color: var(--textLight);
+  font-size: 1rem;
+}
+
+.page-not-found .my-btn {
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.page-not-found .my-btn:hover {
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .page-not-found .lottie-animation {
+    width: 100%;
+  }
+
+  #not-found .container {
+    padding: 0 3rem;
+  }
+
+  .page-not-found h2 {
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .page-not-found p {
+    text-align: justify;
+    margin: 2.5rem 0;
+  }
+}

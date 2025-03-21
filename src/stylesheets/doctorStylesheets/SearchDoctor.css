@@ -1,0 +1,146 @@
+.available-doctors .doctor-profile-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.available-doctors .doctor-profile-card .doctor-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.doc-img-fluid img {
+  height: 200px;
+  width: 200px;
+  border: 1.5px solid var(--borderLight);
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: var(--shadowAll);
+}
+
+.doc-info {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.doc-info a {
+  color: var(--primaryColor) !important;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.doc-info-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.search-sidebar {
+  padding: 10px;
+  border: 1.5px solid var(--borderColor);
+  border-radius: 12px;
+  background: var(--bgColor);
+}
+
+.search-sidebar hr {
+  height: 1.5px;
+  color: var(--borderColor);
+  opacity: 1;
+  margin-bottom: 2rem;
+}
+
+.search-sidebar .heading {
+  color: var(--textColor);
+}
+
+.filter-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 3rem auto;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Media Query */
+@media (max-width: 992px) {
+  .available-doctors .doctor-profile-card .doctor-details {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1.5px solid var(--borderColor);
+    width: 400px;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: var(--materialShadow);
+    background: var(--bgLight);
+  }
+
+  .doc-info {
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .doctor-name-specialization {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .available-doctors .doctor-profile-card {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .available-doctors .doctor-profile-card .doctor-details {
+    width: auto;
+  }
+
+  .doc-info-right {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .filter-bar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .filter-group {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .doctor-name-specialization h5 a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 408px) {
+  .doc-info-right {
+    flex-direction: column;
+  }
+
+  .doc-img-fluid img {
+    height: 150px;
+    width: 150px;
+    box-shadow: var(--shadow);
+  }
+}

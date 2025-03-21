@@ -1,0 +1,99 @@
+.change-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.profile-setting .text-input-field {
+  width: 100%;
+  border: 1.5px solid var(--borderLight);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 16px;
+  color: var(--textColor);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.profile-setting .text-input-field:focus {
+  box-shadow: 0 0 30px rgba(16, 15, 27, 0.15);
+  border: 1.5px solid var(--borderColor);
+}
+
+.profile-setting .label-style {
+  background: #fff;
+  margin-left: 14px;
+  padding: 1px;
+}
+
+.profile-setting .dropdown {
+  width: 100%;
+  height: 50px;
+}
+
+.profile-setting .dropdown .ant-select-selector {
+  border: 1.5px solid #d9d9d9 !important;
+  border-radius: 8px;
+  padding: 10px 14px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.profile-setting .dropdown .ant-select-selector:focus {
+  border: 1.5px solid var(--borderColor);
+  box-shadow: 0 0 30px rgba(16, 15, 27, 0.15);
+}
+
+.profile-setting .date-picker .ant-picker-input input {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* For Edit Blog Page */
+.profile-setting .upload-blog-img {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-direction: row;
+}
+
+.profile-setting .upload-blog-img .blog-img {
+  max-width: 150px;
+}
+
+.profile-setting .upload-btn {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .profile-setting .upload-btn {
+    text-align: end;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-setting .upload-blog-img {
+    flex-direction: column;
+  }
+
+  .profile-setting .upload-blog-img .blog-img {
+    max-width: 80vw;
+    border-radius: 8px;
+  }
+
+  .profile-setting .upload-btn {
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .change-avatar {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

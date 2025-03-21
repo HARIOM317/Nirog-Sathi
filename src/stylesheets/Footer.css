@@ -1,0 +1,144 @@
+/* Footer */
+footer {
+  padding: 2rem 0 0.5rem 0;
+  background-color: #182334;
+  color: #ffffff;
+  margin-top: 80px;
+}
+
+footer h2 {
+  color: #b1b5b9;
+  font-size: 1.15rem;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+  margin-bottom: 2.5rem;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0.75rem 0;
+}
+
+footer li a {
+  text-decoration: none;
+  color: var(--borderColor);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-family: "Varela Round", sans-serif;
+  transition: all 0.3s ease-in;
+}
+
+footer li a:hover {
+  color: var(--secondaryColor);
+  letter-spacing: 0.25px;
+  padding-left: 10px;
+}
+
+.contact-icon {
+  margin-right: 8px;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 5px;
+  border: 1.5px solid var(--textLight);
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-link:hover {
+  color: var(--secondaryColor) !important;
+  letter-spacing: 0px !important;
+  padding-left: 0px !important;
+}
+
+footer .social-media-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+footer .social-media-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 0;
+  background-color: var(--secondaryColor);
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+
+footer .social-media-buttons a:hover {
+  transform: scale(1.1);
+}
+
+footer .paragraph {
+  margin: 0;
+  color: var(--textLight);
+}
+
+.policy .termsLinks {
+  text-decoration: none;
+  color: var(--borderLight);
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: all 0.35s ease;
+}
+
+.policy .termsLinks:hover {
+  color: var(--secondaryColor);
+}
+
+.copyright {
+  color: var(--borderLight);
+  margin-left: 0.6rem !important;
+  margin-bottom: 0;
+}
+
+/* Media Query */
+@media only screen and (max-width: 992px) {
+  footer .col-6 {
+    margin: 2rem 0 !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  footer .col-6 {
+    margin: 1rem !important;
+  }
+
+  footer .paragraph {
+    display: flex;
+    text-align: start;
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  footer .col-6 {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  footer .col-6 {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  footer .col-6 {
+    width: 90%;
+  }
+}

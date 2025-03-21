@@ -1,0 +1,144 @@
+.doctors {
+  background: #fff;
+}
+
+.doctors .member {
+  position: relative;
+  box-shadow: var(--materialShadow);
+  padding: 30px;
+  border: 1.5px solid var(--borderColor);
+  border-radius: 10px;
+  background: var(--bgColor);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.doctors .member .pic {
+  overflow: hidden;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.doctors .member .pic img {
+  transition: ease-in-out 0.3s;
+  object-position: top;
+}
+
+.doctors .member:hover img {
+  transform: scale(1.1);
+}
+
+.doctors .member .member-info {
+  padding-left: 30px;
+}
+
+.doctors .member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: var(--textColor);
+}
+
+.doctors .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.doctors .member span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: var(--primaryColor);
+  bottom: 0;
+  left: 0;
+}
+
+.doctors .member p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+.doctors .member .social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.doctors .member .social .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  margin: 0 6px;
+  background-color: var(--skin-color);
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+
+.doctors .member .social .icon:hover {
+  transform: scale(1.1);
+}
+
+.doctors .member .social .icon:nth-child(1) {
+  margin-left: 0;
+}
+
+.doctors .member .social a + a {
+  margin-left: 8px;
+}
+
+.doctors .member .details{
+  margin-top: 30px;
+}
+
+.doctors .member .details .card-btn {
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--primaryColor);
+  text-transform: capitalize;
+  font-weight: normal;
+  font-size: 1rem;
+  border: none;
+  padding: 8px 16px;
+  transition: 0.25s linear;
+}
+
+.doctors .member .details .card-btn:hover {
+  background-color: #bb2d3b;
+}
+
+@media (max-width: 576px){
+  .doctors{
+    margin: 1.5rem;
+  }
+
+  .doctors .member{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .doctors .member .pic{
+    margin-bottom: 1.5rem;
+    border-color: var(--borderColor);
+  }
+
+  .doctors .member .social{
+    justify-content: center;
+  }
+}

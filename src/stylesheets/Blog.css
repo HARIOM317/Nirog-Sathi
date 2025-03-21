@@ -1,0 +1,140 @@
+.blog-title {
+  color: var(--textColor);
+  font-weight: 600;
+}
+
+.categories-title {
+  color: var(--primaryColor);
+  cursor: pointer;
+  transition: all 0.6s ease-in;
+}
+
+.categories-title h6,
+.categories-title .icon {
+  color: var(--textLight);
+}
+
+.categories-title:hover > h6 {
+  color: var(--textColor);
+}
+.categories-title:hover > .icon {
+  color: var(--textColor);
+}
+
+/* Blog Cards */
+.blog-card {
+  background: var(--bgColor);
+  border: 1.5px solid var(--borderColor);
+  border-radius: 8px 8px 12px 12px;
+  box-shadow: var(--materialShadow);
+}
+
+.blog-card .blog-img {
+  width: 100%;
+  border-radius: 7px 7px 30px 0;
+}
+
+.blog-author {
+  font-size: 11px;
+  background: linear-gradient(#ff5643, #cf2f3c);
+  padding: 4px 15px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  border: none;
+}
+
+.blog-date {
+  font-size: 11px;
+  background: linear-gradient(#f9c785, #d39948);
+  padding: 4px 15px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  border: none;
+}
+
+.blog-author-main {
+  font-size: 14px;
+  background: linear-gradient(#ff5643, #cf2f3c);
+  padding: 6px 18px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.blog-date-main {
+  font-size: 14px;
+  background: linear-gradient(#f9c785, #d39948);
+  padding: 6px 18px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.blog-description {
+  font-size: 14px;
+  color: var(--textLight);
+  text-align: justify;
+}
+
+.read-more-btn {
+  border: none;
+  padding: 0 8px;
+  color: #882127;
+  transition: all 0.35s ease;
+}
+
+.read-more-btn:hover {
+  color: #d4333b;
+}
+
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.35s ease;
+}
+
+.social-button:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Blog comment */
+.input-field {
+  width: 100%;
+  border: 1.5px solid var(--borderLight);
+  border-radius: 25px;
+  background: var(--bgColor);
+  padding: 10px 25px;
+  font-size: 16px;
+  color: var(--textLight);
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  box-shadow: var(--shadowAll);
+  border: 1.5px solid var(--borderColor);
+}
+
+@media (max-width: 992px) {
+  .categories-title h6,
+  .categories-title .icon {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .categories-title h6,
+  .categories-title .icon {
+    font-size: 1rem;
+  }
+}

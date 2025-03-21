@@ -1,0 +1,123 @@
+.patient-treatment .treatment {
+  border: 1px solid var(--borderColor);
+  border-radius: 6px;
+  background: var(--bgColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--materialShadow);
+}
+
+.patient-treatment .treatment .patient-img {
+  border-radius: 50%;
+  margin: 10px;
+  height: 90px;
+  width: 90px;
+  object-fit: cover;
+}
+
+.patient-treatment .treatment .patient-name {
+  color: var(--textColor);
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.patient-treatment .treatment .patients-info {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.patient-treatment .treatment .patients-info .icon {
+  border: 1px solid var(--borderColor);
+  padding: 4px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  font-size: 14px;
+  color: var(--textColor);
+  background: var(--bgColor);
+}
+
+.treatment .patients-info .patient-data {
+  color: var(--textColor);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.patient-treatment .overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 3rem;
+}
+
+.patient-treatment .overview .patient-status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.patient-treatment .overview .patient-status .tag {
+  width: 100px;
+  text-align: center;
+  padding: 4px 8px;
+  color: var(--textColor);
+}
+
+/* Treatment Form */
+.treatment-options .label-style {
+  background: #fff;
+  padding: 1px;
+}
+
+@media (max-width: 1200px) {
+  .patient-treatment .overview {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+}
+
+@media (max-width: 462px) {
+  .treatment .patients-info .patient-data {
+    font-size: 12px;
+  }
+
+  .patient-treatment .treatment .patients-info .icon {
+    padding: 3px;
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 362px) {
+  .treatment .patients-info .patient-data {
+    font-size: 10px;
+  }
+
+  .patient-treatment .treatment .patients-info .icon {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+}

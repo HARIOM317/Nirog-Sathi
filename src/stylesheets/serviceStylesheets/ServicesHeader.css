@@ -1,0 +1,55 @@
+.service-header {
+  margin-top: 3rem;
+}
+
+.service-header .service-container {
+  width: 80vw;
+  padding: 2rem;
+  box-shadow: var(--materialShadow);
+  background-color: #fff;
+  border-radius: 0.5rem;
+  border: 1.5px solid var(--borderLight);
+}
+
+.service-header .service-container .main-heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.service-header .service-container .service-container-sub-div {
+  padding: 0 1rem;
+}
+
+.service-header .sub-heading {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--textColor);
+}
+
+.service-header .font-awesome-style {
+  font-size: 2.3rem;
+  color: var(--primaryColor);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: var(--bgColor);
+  display: grid;
+  place-items: center;
+  margin: 2rem auto;
+  border: 1.5px solid var(--borderLight);
+}
+
+.service-header .paragraph {
+  font-size: 1rem;
+  color: var(--textColor);
+  margin: 1rem !important;
+  text-align: justify;
+}
+
+@media (max-width: 576px) {
+  .service-header .service-container {
+    padding: 1rem;
+  }
+}

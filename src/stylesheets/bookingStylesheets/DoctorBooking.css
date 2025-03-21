@@ -1,0 +1,54 @@
+.booking-doc-img img {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    object-position: top;
+    border: 1.5px solid var(--borderColor);
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.booking-doc-img a {
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+
+.booking-doc-img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.date-card{
+    padding: 11px;
+    background: var(--bgColor);
+    height: 286px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border: 1.5px solid var(--borderColor);
+    box-shadow: var(--materialShadow);
+}
+
+.selected-datetime{
+    margin-bottom: 1.5rem;
+    color: var(--textColor);
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.date-heading{
+    color: var(--textColor);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+@media (max-width: 576px) {
+    .date-heading{
+        font-size: 1rem;
+    }
+
+    .stepper{
+        margin: 1rem 2rem;
+        height: 200px;
+    }
+}

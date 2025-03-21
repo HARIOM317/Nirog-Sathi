@@ -1,0 +1,59 @@
+/* Doctor Availability Style */
+.availability {
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.availability .availabilityCard {
+  flex: 0 0 25%;
+  height: 120px;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--secondaryColor);
+  margin: 3rem 1rem;
+}
+
+.availability .availabilityCard > i {
+  font-size: 2.5rem;
+  color: var(--primaryColor);
+  margin-bottom: 10px;
+}
+
+.availability .availabilityCard h3 {
+  color: var(--textColor);
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+}
+
+.availability .availabilityCard span {
+  font-size: 0.85rem;
+  color: var(--textLight);
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .availability .availabilityCard {
+    height: auto;
+    flex: 0 0 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .availability .availabilityCard {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .availability .availabilityCard {
+    flex: 0 0 60%;
+  }
+}
+
+@media (max-width: 402px) {
+  .availability .availabilityCard {
+    flex: 0 0 90%;
+  }
+}

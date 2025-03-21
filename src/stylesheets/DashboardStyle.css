@@ -1,0 +1,47 @@
+.accept-btn{
+    background: #38c46d;
+    color: white;
+    border: none;
+    transition: all 0.35s ease;
+}
+
+.accept-btn:hover{
+    background: #299150 !important;
+    color: white !important;
+}
+
+.cancel-btn{
+    background: #ff2121;
+    color: white;
+    border: none;
+    transition: all 0.35s ease;
+}
+
+.cancel-btn:hover{
+    background: #cc1a1a !important;
+    color: white !important;
+}
+
+.treatment-btn{
+    background: #40c4fc;
+    color: white;
+    border: none;
+    transition: all 0.35s ease;
+}
+
+.treatment-btn:hover{
+    background: #339cc9 !important;
+    color: white !important;
+}
+
+.view-btn{
+    background: #dba200;
+    color: white;
+    border: none;
+    transition: all 0.35s ease;
+}
+
+.view-btn:hover{
+    background: #a77c00 !important;
+    color: white !important;
+}

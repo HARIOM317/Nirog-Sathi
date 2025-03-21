@@ -1,0 +1,277 @@
+/* ----- HomePage Header Section ----- */
+.homepage {
+  padding: 0 2rem;
+  margin-top: 7rem;
+  width: 100%;
+}
+
+h1.nirog-sathi {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--textColor);
+  margin: 2rem 0;
+}
+
+.typing {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+  font-weight: bold;
+}
+
+.homepage .main-header-container .header-left-side {
+  margin-top: 3rem;
+}
+
+.homepage .main-header-container .doctor-header-left-side {
+  margin-top: 5rem;
+}
+
+.homepage .main-header-container .my-btn {
+  text-decoration: none;
+}
+
+.homepage .main-header-container .my-btn:hover {
+  color: white;
+}
+
+.homepage .hello {
+  padding-top: 2rem;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: var(--textColor);
+}
+
+.homepage .hello span {
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--primaryColor);
+}
+
+.main-header-para {
+  font-size: 1.2rem;
+  color: var(--textLight);
+  margin: 1rem 0 2rem 0;
+  width: 90%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.homepage .btn-get-started {
+  text-transform: none;
+  display: inline-block;
+  padding: 12px 24px;
+  margin-right: 20px;
+  font-size: 1rem;
+  color: white;
+  text-align: start;
+  border-radius: 1.75rem;
+  display: inline-block;
+  white-space: nowrap;
+  font-weight: 500;
+  background: var(--primaryColor);
+  transition: all 0.35s ease;
+}
+
+.homepage .btn-get-started:hover {
+  background: var(--primaryHoverColor);
+}
+
+.homepage .main-header-section-images {
+  position: relative;
+}
+
+.homepage .main-header-section-images .circle {
+  position: absolute;
+  width: 350px;
+  height: 250px;
+  background: #ffdbdb;
+  border: 4px solid white;
+  filter: drop-shadow(0 0 0.5em rgba(30, 30, 30, 0.15));
+  box-shadow: var(--materialShadow);
+  border-radius: 24px;
+  --webkit-border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -34px);
+  z-index: -1;
+}
+
+/* Search bar */
+.homepage .search-bar-container {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage .search-bar-container .search-bar {
+  width: 80%;
+}
+
+.homepage .search-bar-container .ant-input-affix-wrapper,
+.homepage .search-bar-container .ant-input-affix-wrapper-focused {
+  border-width: 1.5px !important;
+  border-radius: 30px 0 0 30px !important;
+  padding: 6.5px 22px !important;
+}
+
+.homepage .search-bar-container .ant-input-affix-wrapper {
+  border-color: #b4b4be !important;
+}
+
+.homepage .search-bar-container .ant-input-affix-wrapper-focused {
+  border-color: var(--primaryColor) !important;
+}
+
+.homepage .search-bar-container .ant-btn {
+  width: 200px !important;
+  border-radius: 0 30px 30px 0 !important;
+}
+
+.homepage .search-bar-container .ant-select-item-option-active {
+  background-color: #ffdede !important;
+  color: black !important;
+  font-weight: 500 !important;
+}
+
+/* Media Query */
+@media (max-width: 1400px) {
+  .homepage .main-header-section-images .circle {
+    transform: translate(-50%, -64px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .homepage .main-header-section-images .circle {
+    transform: translate(-50%, -94px);
+  }
+}
+
+@media (max-width: 1018px) {
+  .homepage .main-header-section-images .circle {
+    transform: translate(-50%, -98px);
+  }
+}
+
+@media (max-width: 1202px) {
+  .main-header-para {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .homepage .main-header-section-images {
+    margin-bottom: 1rem;
+  }
+
+  .homepage .main-header-container .header-left-side,
+  .homepage .main-header-container .doctor-header-left-side {
+    margin-top: 0;
+  }
+
+  .homepage .search-bar-container {
+    width: 100%;
+  }
+
+  .homepage .main-header-section-images .circle {
+    width: 100%;
+    height: 350px;
+    transform: translate(-50%, -114px);
+  }
+
+  .homepage .search-bar-container .search-bar {
+    width: 100%;
+  }
+
+  .homepage .search-bar-container .ant-btn {
+    width: 130px !important;
+  }
+}
+
+@media (max-width: 780px) {
+  .homepage .main-header-section-images .circle {
+    transform: translate(-50%, -118px);
+  }
+
+  h1.nirog-sathi {
+    font-size: 1.65rem;
+    font-weight: bold;
+    color: var(--textColor);
+    margin: 1.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage .main-header-section-images .circle {
+    transform: translate(-50%, -74px);
+    height: 250px;
+  }
+
+  .homepage .search-bar-container .ant-btn {
+    width: 80px !important;
+  }
+
+  .homepage .search-bar-container .ant-input-affix-wrapper,
+  .homepage .search-bar-container .ant-input-affix-wrapper-focused {
+    border-radius: 12px 0 0 12px !important;
+    padding: 4px 16px !important;
+    font-size: 14px !important;
+  }
+
+  .homepage .search-bar-container .ant-btn {
+    border-radius: 0 12px 12px 0 !important;
+    height: 32px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .homepage .main-header-section-images .circle {
+    transform: translate(-50%, -78px);
+  }
+}
+
+@media (max-width: 588px) {
+  .homepage .main-header-section-images .circle {
+    transform: translate(-50%, -82px);
+  }
+}
+
+@media (max-width: 576px) {
+  .homepage .btn-get-started {
+    padding: 8px 16px;
+    margin-right: 15px;
+    font-size: 0.8rem;
+    border-radius: 1.3rem;
+    /* margin-top: 12px; */
+  }
+
+  .homepage .main-header-section-images .circle {
+    display: none;
+  }
+
+  .homepage .main-header-section-images img {
+    border: 1.5px solid var(--borderColor);
+    border-radius: 50%;
+    max-width: 75vw;
+    max-height: 75vw;
+    min-width: 75vw;
+    min-height: 75vw;
+    object-fit: cover;
+    background: var(--bg-gradient);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 400px) {
+  .homepage .search-bar-container .ant-btn {
+    display: none !important;
+  }
+
+  .homepage .search-bar-container .ant-input-affix-wrapper,
+  .homepage .search-bar-container .ant-input-affix-wrapper-focused {
+    border-radius: 6px !important;
+    border-width: 1px !important;
+    padding: 4px 12px !important;
+  }
+}

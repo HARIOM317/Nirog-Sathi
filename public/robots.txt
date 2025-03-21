@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://nirogsathi.com/sitemap.xml

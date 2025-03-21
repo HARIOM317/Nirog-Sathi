@@ -1,0 +1,54 @@
+.review {
+  margin-bottom: 3rem;
+}
+
+.review .review-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.review .review-bar .star-rating {
+  text-align: end;
+}
+
+.review-img {
+  border-radius: 50%;
+}
+
+.review-img img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  object-position: top;
+  height: 40px;
+  width: 40px;
+}
+
+/* Doctor Profile Review Section */
+.doctor-review .recommend-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .doctor-review .recommend-btn {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .review .review-bar {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .review .review-bar .star-rating {
+    text-align: start;
+    margin-bottom: 10px;
+  }
+}

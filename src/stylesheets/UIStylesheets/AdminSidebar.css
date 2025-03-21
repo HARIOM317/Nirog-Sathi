@@ -1,0 +1,93 @@
+.sidebar {
+  bottom: 0;
+  left: 0;
+  margin-top: 0;
+  position: fixed;
+  top: 60px;
+  width: 240px;
+  border-right: 1px solid var(--borderLight);
+  height: 100%;
+}
+
+.sidebar-inner {
+  height: 100%;
+  min-height: 100%;
+}
+.sidebar-menu {
+  padding: 15px;
+}
+.sidebar-menu ul {
+  color: #363636;
+  font-size: 14px;
+  line-height: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+}
+.sidebar-menu ul li {
+  line-height: inherit;
+}
+
+.sidebar-menu > ul > li {
+  border-bottom: 1px solid #dadada;
+  position: relative;
+}
+.sidebar-menu > ul > li:last-child {
+  border-bottom: 0;
+}
+
+.sidebar-menu > ul > li > a {
+  font-size: 16px;
+  text-decoration: none;
+  height: auto;
+  color: var(--textLight);
+  display: block;
+  padding: 16px 20px;
+}
+
+.sidebar-menu > ul > li:hover > a,
+.sidebar-menu > ul > li.active > a {
+  color: var(--primaryColor);
+}
+
+.sidebar-menu > ul > li:hover > a {
+  transform: scale(1.05);
+}
+
+.sidebar-menu > ul > li > a.active {
+  color: var(--primaryColor) !important;
+  background: var(--bgHoverColor);
+  border: 1px solid var(--borderColor);
+}
+
+.sidebar .sidebar-menu > ul > li > a span {
+  display: inline-block;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.sidebar-menu > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-menu ul li a span,
+.sidebar-menu ul li a i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 75px;
+  }
+
+  .sidebar-menu {
+    padding: 8px;
+  }
+
+  .sidebar-menu ul li a span{
+    display: none !important;
+  }
+}

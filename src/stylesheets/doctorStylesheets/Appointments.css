@@ -1,0 +1,217 @@
+/* Appointment Tab Style */
+.appointment-details {
+  border: 1.5px solid var(--borderColor);
+  box-shadow: var(--materialShadow);
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  background: var(--bgColor);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-animation: fadeIn 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fadeIn 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.appointments .profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+  min-width: 380px;
+  background: var(--bgColor);
+  border-radius: 8px;
+  padding: 10px 15px;
+  border: none;
+}
+
+.appointments .image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.appointments .image .profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.appointments .profile-card h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--textColor);
+}
+
+.appointments .profile-card .tracking-id {
+  margin-bottom: 10px;
+}
+
+.appointments .profile-card .copyBtn {
+  background: #fff;
+  color: var(--textColor);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.appointments .profile-card .copyBtn:hover {
+  border-color: var(--borderColor);
+  background: var(--bgHoverColor);
+}
+
+.appointments .profile-card .text-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  text-align: end;
+  color: var(--textLight);
+  font-size: 14px;
+  font-weight: 500;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.appointments .profile-card .icon {
+  color: var(--textColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background: var(--bgColor);
+  border: 1px solid var(--borderColor);
+  padding: 6px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.appointments .profile-card .tag {
+  padding: 4px 8px;
+  width: 100px;
+  text-align: center;
+  color: var(--textColor);
+}
+
+.appointments .profile-card .accept-button {
+  background: #30b774;
+  color: white;
+  font-weight: 500;
+  border: 1.5px solid #30b774;
+}
+
+.appointments .profile-card .accept-button:hover {
+  background: white !important;
+  color: #228353 !important;
+  border-color: #228353 !important;
+}
+
+.appointments .profile-card .cancel-button {
+  background: #c4384e;
+  color: white;
+  font-weight: 500;
+  border: 1.5px solid #c4384e;
+}
+
+.appointments .profile-card .cancel-button:hover {
+  background: white;
+  color: #912939 !important;
+  border-color: #912939;
+}
+
+/* Common Style for Dashboard */
+.patients-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.patients-info .info {
+  color: #757575;
+}
+
+.patients-info .info p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.patients-info .info .icon {
+  font-size: 23px;
+}
+
+.patient-img img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 2px solid var(--borderColor);
+  transition: all 0.3s ease;
+}
+
+.patient-img img:hover {
+  box-shadow: var(--shadowAll);
+}
+.appointment-status > p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #757575;
+}
+
+@media (max-width: 1197px) {
+  .appointment-details {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .appointments .profile-card {
+    min-width: 450px;
+  }
+}
+
+@media (max-width: 576px) {
+  .appointments .profile-card {
+    min-width: 350px;
+  }
+}
+
+@media (max-width: 402px) {
+  .appointments .profile-card {
+    min-width: 300px;
+  }
+
+  .appointments .profile-card .text-data {
+    font-size: 12px;
+  }
+
+  .appointments .profile-card .tag {
+    padding: 2px 4px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 350px) {
+  .appointments .profile-card {
+    min-width: auto;
+  }
+}

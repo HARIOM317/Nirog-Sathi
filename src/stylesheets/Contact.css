@@ -1,0 +1,97 @@
+/* ----- Contact Us Section ----- */
+.contact {
+  margin-top: 2rem;
+}
+
+/* Contact Top Section */
+
+.contact .contact-info-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact .contact-info-item .icon {
+  display: inline-block;
+}
+
+.contact .contact-info-item .icon .fa {
+  font-size: 2rem;
+  background-color: var(--bgColor);
+  border: 1px solid var(--borderColor);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 50%;
+  color: var(--primaryColor);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.contact .contact-info-item .icon .fa:hover {
+  transform: scale(1.05);
+}
+
+.contact .contact-info-item h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--textColor);
+  text-transform: capitalize;
+  margin: 15px 0 5px;
+}
+
+.contact .contact-info-item p {
+  font-size: 1rem;
+  line-height: 25px;
+  color: var(--textLight);
+  font-weight: 400;
+}
+
+/* Form Styling */
+
+.form-control {
+  height: 3.2rem;
+}
+
+.contact-input-field {
+  margin-bottom: 1.5rem;
+}
+
+.contact form .form-control {
+  border: 1.5px solid var(--borderLight);
+  border-radius: 25px;
+  background: var(--bgColor);
+  padding: 10px 25px;
+  font-size: 16px;
+  color: var(--textLight);
+  transition: all 0.3s ease;
+}
+
+.contact form .form-control:focus {
+  box-shadow: 0 0 30px rgba(16, 15, 27, 0.15);
+  border: 1.5px solid var(--borderColor);
+}
+
+.contact form textarea.form-control {
+  height: 140px;
+}
+
+/* Media Query */
+@media (max-width: 991px) {
+  .contact .contact-info-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact .contact-info-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .contact-us-section .container{
+    padding: 0 rem;
+  }
+}
+

@@ -1,0 +1,34 @@
+.services .service-card {
+  border: 1.5px solid var(--borderColor);
+  border-radius: 10px;
+  box-shadow: var(--materialShadow);
+  height: 450px;
+  background: var(--bgColor);
+  transition: all 0.3s ease-in-out;
+}
+
+.services .service-card:hover {
+  transform: scaleY(1.03);
+}
+
+.services .service-card img {
+  border-radius: 9px 9px 0 0;
+  cursor: pointer;
+  min-height: 160px !important;
+  max-height: 160px !important;
+}
+
+.services .service-card span {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background: linear-gradient(#ff6242, #d7363d);
+  padding: 2px 14px;
+  border-radius: 20px;
+}
+
+.services .service-card p {
+  color: var(--textLight);
+  text-align: justify;
+  font-size: 14px;
+}

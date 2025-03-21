@@ -1,0 +1,142 @@
+/* About */
+.about .about-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.about .about-content .about-text {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.about .about-content .about-text h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: var(--textColor);
+}
+
+.about .about-content .about-text h3 span {
+  color: var(--primaryColor);
+}
+
+.about .about-content .about-text p {
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--textLight);
+  text-align: justify;
+}
+
+.about .about-content .about-card {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.about .about-content h3.title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: var(--textColor);
+}
+
+.about .about-content .timeline-box {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.about .about-content .timeline {
+  background: var(--bgColor);
+  padding: 30px 15px;
+  border: 1px solid var(--borderColor);
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.about .about-content .timeline .timeline-item {
+  position: relative;
+  padding-left: 35px;
+  padding-bottom: 15px;
+  margin-left: 0.75rem;
+}
+
+.about .about-content .timeline .timeline-item:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.about .about-content .timeline .timeline-item:last-child::before {
+  height: 100%;
+}
+
+.about .about-content .timeline .timeline-item::before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 120%;
+  left: 6px;
+  top: 0;
+  background: var(--primaryColor);
+}
+
+.about .about-content .timeline .circle-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 12.5px;
+  width: 12.5px;
+  border: 2px solid var(--primaryColor);
+  border-radius: 50%;
+  background: var(--bgColor);
+}
+
+.about .about-content .timeline .timeline-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  color: var(--textColor);
+}
+
+.about .about-content .timeline .timeline-text {
+  line-height: 25px;
+  font-size: 16px;
+  text-align: justify;
+  color: var(--textLight);
+  padding-bottom: 1rem;
+  border-bottom: 1.5px solid var(--borderColor);
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .about .about-content .about-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about .about-content .timeline {
+    margin-bottom: 3rem;
+  }
+
+  .about .container {
+    padding: 0 3rem;
+  }
+
+  .about .about-content .about-card {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about .about-content .timeline .timeline-item {
+    margin-left: 0;
+  }
+
+  .about .container {
+    padding: 0 1rem;
+  }
+}

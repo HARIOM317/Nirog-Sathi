@@ -1,0 +1,243 @@
+.profile-section {
+  border: 1.5px solid var(--borderLight);
+  border-radius: 12px;
+  background: var(--bgColor);
+  box-shadow: var(--materialShadow);
+}
+
+.profile-section .profile-view-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profile-section .profile-view-card .profile-view-details {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.profile-section .profile-view-card .other-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.doc-img img {
+  height: 280px;
+  width: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid var(--borderLight);
+  box-shadow: var(--shadow);
+  margin: 8px;
+}
+
+.doc-profile {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 5px 0 10px 0;
+}
+
+.doc-profile .star-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  gap: 10px;
+}
+
+.doctor-name {
+  color: var(--textColor);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.doctor-detail {
+  font-size: 1rem;
+  color: var(--textLight);
+  margin: 0;
+  margin-top: 10px;
+}
+
+.specialization-tags {
+  margin-top: 1rem;
+}
+
+.tags {
+  background: #ffd9d9;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ff4c4c;
+  padding: 3px 15px;
+  border: 1.5px solid #ffc4c4;
+  border-radius: 20px;
+  margin: 10px 20px 10px 0;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 1rem;
+}
+
+.social-media-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 0;
+  background-color: var(--secondaryColor);
+  text-decoration: none;
+  color: white !important;
+  transition: all 0.3s ease-in;
+}
+
+.social-media-icons a:hover {
+  transform: scale(1.1);
+}
+
+.doctor-booking {
+  background: var(--primaryColor);
+  width: 200px;
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 50px;
+  margin-top: 1rem;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.doctor-booking a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.doctor-booking:hover {
+  background: #b9122c;
+}
+
+/* Media Query */
+@media (max-width: 992px) {
+  .profile-section {
+    padding: 8px;
+    padding-bottom: 1rem;
+  }
+  .profile-section .profile-view-card .profile-view-details {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .doc-profile {
+    margin-left: 1rem;
+  }
+
+  .profile-section .profile-view-card .other-details {
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-section {
+    border: none;
+    border-radius: 0;
+    background: white;
+    box-shadow: none;
+  }
+
+  .profile-section .profile-view-card {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .profile-section .profile-view-card .profile-view-details {
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid var(--borderLight);
+    border-radius: 12px;
+    background: var(--bgColor);
+    box-shadow: var(--materialShadow);
+    padding: 1rem;
+  }
+
+  .doc-img img {
+    border-radius: 50%;
+    border: 1.5px solid var(--borderLight);
+    box-shadow: none;
+    margin: 0;
+  }
+
+  .profile-section .profile-view-card .other-details {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin: 1rem;
+  }
+
+  .doc-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .doctor-name {
+    margin-bottom: 0.5rem;
+  }
+
+  .doc-profile .specialization-tags {
+    text-align: center;
+  }
+
+  .doc-profile .specialization-tags .tags {
+    margin: 10px;
+  }
+
+  .specialization-tags {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .doc-profile .star-rating {
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 476px) {
+  .profile-section .profile-view-card .other-details {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+  }
+}
+
+@media (max-width: 402px) {
+  .doc-img img {
+    height: 240px;
+    width: 240px;
+  }
+}
+
+@media (max-width: 320px) {
+  .doc-img img {
+    height: 200px;
+    width: 200px;
+  }
+}

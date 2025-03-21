@@ -1,0 +1,71 @@
+.location-card {
+  min-height: 250px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 1.5px solid var(--borderColor);
+  border-radius: 1rem;
+  box-shadow: var(--materialShadow);
+  background: var(--bgColor);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.location-card .icon {
+  min-width: 80px;
+  min-height: 80px;
+  max-width: 80px;
+  max-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--primaryColor);
+  background: var(--bgColor);
+  font-size: 2rem;
+  border: 1.5px solid var(--borderLight);
+  border-radius: 50%;
+}
+
+.location-card .clinic-name {
+  color: var(--textColor);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.location-card .specialization {
+  font-size: 1rem;
+  color: var(--textLight);
+  font-weight: 500;
+}
+
+.location-card .clinic-address {
+  font-size: 1rem;
+  color: var(--primaryColor);
+  font-weight: 500;
+}
+
+.location-card .clinic-address i {
+  background: var(--bgColor);
+  margin-right: 6px;
+  border: 1px solid var(--borderLight);
+  padding: 8px;
+  border-radius: 50%;
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 30px;
+  max-height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 576px) {
+  .location-card {
+    margin: 1rem auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

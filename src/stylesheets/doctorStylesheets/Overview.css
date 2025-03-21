@@ -1,0 +1,36 @@
+.timeline-heading {
+  font-size: 1rem;
+  color: var(--primaryColor);
+}
+
+.timeline-description {
+  font-size: 0.75rem;
+}
+
+.doctor-service-card{
+    background: linear-gradient(#ffd1d1, #ffc1c1);
+    margin: 0.5rem auto;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 1.5px solid #cc9a9a;
+    box-shadow: var(--shadowAll);
+    color: var(--textColor);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.doctor-specialization-card{
+    background: linear-gradient(#ffdbc5, #ffcdad);
+    margin: 0.5rem auto;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 1.5px solid #cca38a;
+    box-shadow: var(--shadowAll);
+    color: var(--textColor);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}

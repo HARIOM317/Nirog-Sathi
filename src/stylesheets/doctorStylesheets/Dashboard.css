@@ -1,0 +1,82 @@
+.dash-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid var(--borderColor);
+  height: 230px;
+  border-radius: 8px;
+  box-shadow: var(--materialShadow);
+  background: var(--bgColor);
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.dash-card:hover {
+  transform: scaleY(1.025);
+}
+
+.dash-card .info-icon {
+  border: 1.5px solid var(--borderLight);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background: var(--bgColor);
+}
+
+.dash-card .info-icon i {
+  font-size: 2.5rem;
+}
+
+.dash-card .first-icon {
+  color: #e01736;
+  border-color: #dbc5cb;
+  background: #ffe6ea;
+}
+
+.dash-card .second-icon {
+  color: #e98e00;
+  border-color: #dbd1c5;
+  background: #fff4e6;
+}
+
+.dash-card .third-icon {
+  color: #7452ff;
+  border-color: #cfc2db;
+  background: #f2e6ff;
+}
+
+.dash-card .forth-icon {
+  color: #06de83;
+  border-color: #cbdbc5;
+  background: #e6ffe8;
+}
+
+.dash-card .info-count {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--textColor);
+  margin: 0;
+}
+
+.dash-card .info-label {
+  color: var(--textLight);
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.dash-card .info-date {
+  color: var(--textLight);
+  font-size: 14px;
+}
+
+@media (max-width: 576px) {
+  .count-card{
+    margin: 0 1rem;
+  }
+}

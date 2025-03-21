@@ -1,0 +1,276 @@
+/* DesignProcess.css */
+.design-process-container {
+  text-align: center;
+}
+
+.design-process-container .steps {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.design-process-container .step {
+  width: 180px;
+  text-align: center;
+  position: relative;
+}
+
+.design-process-container .step h3 {
+  margin: 20px 0 10px 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--textColor);
+}
+
+.design-process-container .step p {
+  font-size: 0.9em;
+  color: var(--textLight);
+}
+
+.design-process-container .icon {
+  width: 120px;
+  height: 120px;
+  border: 1.5px solid rgba(0, 0, 0, 0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  border-radius: 50%;
+  background: var(--bgLight);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles for colors */
+.design-process-container .icon.icon-1 {
+  border-color: rgba(62, 89, 170, 0.35);
+}
+
+.design-process-container .icon.icon-2 {
+  border-color: rgba(170, 126, 63, 0.35);
+}
+
+.design-process-container .icon.icon-3 {
+  border-color: rgba(170, 62, 62, 0.35);
+}
+
+.design-process-container .icon.icon-4 {
+  border-color: rgba(62, 170, 119, 0.35);
+}
+
+.design-process-container .step-a {
+  color: #5174dd;
+}
+
+.design-process-container .step-a .first-icon {
+  border-bottom: 2px solid #5174dd;
+  border-radius: 50%;
+  padding: 2rem;
+}
+
+.design-process-container .step-b {
+  color: #dda552;
+}
+
+.design-process-container .step-b .second-icon {
+  border-top: 2px solid #dda552;
+  border-radius: 50%;
+  padding: 2rem;
+}
+
+.design-process-container .step-c {
+  color: #dd5151;
+}
+
+.design-process-container .step-c .third-icon {
+  border-bottom: 2px solid #dd5151;
+  border-radius: 50%;
+  padding: 2rem;
+}
+
+.design-process-container .step-d {
+  color: #51dd9c;
+}
+
+.design-process-container .step-d .forth-icon {
+  border-top: 2px solid #51dd9c;
+  border-radius: 50%;
+  padding: 2rem;
+}
+
+/* Add arrows between steps */
+.step::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.58L13.17 12l-4.58-4.59L10 6l6 6-6 6z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  right: -75px;
+  z-index: 1;
+}
+
+.step:last-child::after {
+  content: none;
+}
+
+@media (max-width: 1200px) {
+  .design-process-container .step .mobile-step {
+    width: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .design-process-container .icon {
+    width: 70px;
+    height: 70px;
+    font-size: 3rem;
+  }
+
+  .design-process-container .step-a .first-icon,
+  .design-process-container .step-b .second-icon,
+  .design-process-container .step-c .third-icon,
+  .design-process-container .step-d .forth-icon {
+    padding: 0.9rem;
+  }
+
+  .step::after {
+    top: 23%;
+    right: -55px;
+  }
+}
+
+@media (max-width: 992px) {
+  .design-process-container .step .mobile-step {
+    width: 100px;
+  }
+
+  .design-process-container .icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .design-process-container .step-a .first-icon,
+  .design-process-container .step-b .second-icon,
+  .design-process-container .step-c .third-icon,
+  .design-process-container .step-d .forth-icon {
+    padding: 0.8rem;
+  }
+
+  .step::after {
+    top: 23%;
+    right: -30px;
+  }
+
+  .design-process-container .step h3 {
+    margin: 20px 20px 10px 20px;
+    font-size: 1rem;
+  }
+
+  .design-process-container .step p {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 768px) {
+  .design-process-container .steps {
+    flex-direction: column;
+  }
+
+  .design-process-container .step {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+
+  .design-process-container .icon {
+    width: 120px;
+    height: 120px;
+    font-size: 5rem;
+  }
+
+  .design-process-container .step-a .first-icon,
+  .design-process-container .step-b .second-icon,
+  .design-process-container .step-c .third-icon,
+  .design-process-container .step-d .forth-icon {
+    border: none;
+  }
+
+  .design-process-container .step h3 {
+    margin: 20px 0 10px 0;
+    font-size: 1.15rem;
+  }
+
+  .design-process-container .step p {
+    font-size: 0.9rem;
+  }
+
+  .design-process-container .step .mobile-step {
+    width: 180px;
+    padding: 1rem;
+  }
+
+  .design-process-container .step .step-1 {
+    border-top: 2px solid #5174dd;
+    border-bottom: 2px solid #5174dd;
+    border-radius: 50%;
+  }
+
+  .design-process-container .step .step-2 {
+    border-top: 2px solid #dda552;
+    border-bottom: 2px solid #dda552;
+    border-radius: 50%;
+  }
+
+  .design-process-container .step .step-3 {
+    border-top: 2px solid #dd5151;
+    border-bottom: 2px solid #dd5151;
+    border-radius: 50%;
+  }
+
+  .design-process-container .step .step-4 {
+    border-top: 2px solid #51dd9c;
+    border-bottom: 2px solid #51dd9c;
+    border-radius: 50%;
+  }
+
+  .step::after {
+    width: 50px;
+    height: 50px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.58L13.17 12l-4.58-4.59L10 6l6 6-6 6z"/></svg>');
+    transform: rotate(90deg);
+    top: auto;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    right: auto;
+  }
+
+  .step:last-child::after {
+    content: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .design-process-container .step .mobile-step {
+    width: 120px;
+  }
+
+  .design-process-container .icon {
+    width: 70px;
+    height: 70px;
+    font-size: 3rem;
+  }
+
+  .design-process-container .step-a .first-icon,
+  .design-process-container .step-b .second-icon,
+  .design-process-container .step-c .third-icon,
+  .design-process-container .step-d .forth-icon {
+    padding: 0.5rem;
+  }
+}

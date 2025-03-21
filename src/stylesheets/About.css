@@ -1,0 +1,184 @@
+.para {
+  font-size: 1rem;
+  color: var(--text-black-700);
+  text-align: justify;
+}
+
+.our-services-info {
+  margin-top: 2rem !important;
+}
+
+.our-services img {
+  width: 70%;
+  height: 80%;
+  margin-top: 1.5rem;
+  box-shadow: var(--materialShadow);
+  border: 1px solid var(--bg-black-50);
+  border-radius: 1.5rem;
+}
+
+.common-section .btn-style {
+  width: 9rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  color: var(--primaryColor);
+  background-color: transparent;
+  text-transform: capitalize;
+  font-weight: 600;
+  border: 0.1rem solid var(--primaryColor);
+  transition: 0.25s linear;
+}
+
+.common-section .btn-style:hover {
+  background-color: var(--primaryColor);
+  color: white;
+  box-shadow: 0 0.2rem 0.5rem rgba(236, 24, 57, 0.2);
+}
+
+.our-services .main-heading {
+  font-weight: bolder;
+  font-size: 32px;
+  text-transform: capitalize;
+  margin: 3.5rem 0;
+}
+
+.our-services-info {
+  margin-top: 4rem;
+}
+
+.our-services .our-services-number {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 0.1rem solid var(--primaryColor);
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-services-data {
+  padding-left: 2rem;
+  margin: 0.5rem 1rem;
+}
+
+.our-services .our-services-data p {
+  margin: 1rem 0;
+}
+
+/* ----- World Class Support Section ----- */
+.our-services-right-side {
+  margin-top: 7.5rem;
+}
+
+.our-services-right-side-content,
+.our-services-list {
+  padding-left: 3rem !important;
+}
+
+.award-img {
+  height: 120px;
+  margin-bottom: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: #eff0f3;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+/* Our Specialist Section */
+.top-specialist {
+  margin: 1.5rem 0;
+}
+
+.top-specialist .top-specialist-card {
+  margin: 2rem auto;
+}
+
+.top-specialist img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin: 1rem;
+  border: 1px solid var(--borderColor);
+}
+
+.top-specialist h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: var(--textColor);
+}
+
+.top-specialist .top-specialist-card p {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--textLight);
+}
+
+.top-specialist .top-specialist-card .card-btn {
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--primaryColor);
+  text-transform: capitalize;
+  font-weight: normal;
+  font-size: 1rem;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 1rem;
+  transition: 0.25s linear;
+}
+
+.top-specialist .top-specialist-card .card-btn:hover {
+  background-color: #bb2d3b;
+}
+
+/* Media Query */
+@media (max-width: 992px) {
+  .appointment .my-btn {
+    width: 50%;
+  }
+
+  .top-specialist .main-heading {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .appointment .my-btn {
+    width: 80%;
+  }
+
+  .appointment .container {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 518px) {
+  .our-services .our-services-number {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .our-services-info .our-services-data {
+    padding-left: 1rem;
+    margin: 0;
+  }
+
+  .our-services-info .our-services-data .sub-heading {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .our-services-list{
+    margin: 0;
+    /* padding: 0; */
+  }
+}

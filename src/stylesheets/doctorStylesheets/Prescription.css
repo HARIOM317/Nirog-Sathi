@@ -1,0 +1,54 @@
+.symptoms-section {
+  border-right: 1.5px solid var(--borderColor);
+}
+
+.symptoms-section h5 {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--textColor);
+}
+
+.symptoms-section p {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--textLight);
+}
+
+.invoice-content .invoice-item .invoice-details h3 {
+  color: var(--textColor);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.invoice-content .invoice-item .invoice-details p {
+  font-size: 1rem;
+  color: var(--textLight);
+  text-align: start;
+}
+
+.invoice-content .invoice-item .invoice-details span {
+  font-size: 14px;
+  color: gray;
+  text-align: start;
+}
+
+.invoice-content .invoice-item .invoice-info .customer-text {
+  color: var(--textColor);
+  font-size: 1.5rem;
+}
+
+.print-btn {
+  margin-right: 10rem;
+}
+
+@media (max-width: 992px) {
+  .print-btn {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .symptoms-section {
+    border-right: 0;
+  }
+}

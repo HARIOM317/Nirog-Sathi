@@ -1,0 +1,77 @@
+.info-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1.5px solid var(--borderLight);
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    background: var(--bgColor);
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+
+.info-card:hover{
+    transform: scaleY(1.025);
+}
+
+.info-card .info-icon{
+    border: 1.5px solid var(--borderLight);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background: var(--bgColor);
+}
+
+.info-card .info-icon i{
+    font-size: 4rem;
+}
+
+.info-card .first-icon{
+    color: #e98e00;
+    border-color: #dbd1c5;
+    background: #fff4e6;
+}
+
+.info-card .second-icon{
+    color: #e01736;
+    border-color: #dbc5cb;
+    background: #ffe6ea;
+}
+
+.info-card .third-icon{
+    color: #7452ff;
+    border-color: #cfc2db;
+    background: #f2e6ff;
+}
+
+.info-card .forth-icon{
+    color: #06de83;
+    border-color: #cbdbc5;
+    background: #e6ffe8;
+}
+
+.info-card .info-count{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--textColor);
+    margin: 0;
+}
+
+.info-card .info-label{
+    color: var(--textLight);
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0;
+}
+
+@media (max-width: 768px){
+    .info-card{
+        margin: 1rem 2rem;
+    }
+}

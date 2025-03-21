@@ -1,0 +1,73 @@
+.booking-item-wrap >ul{
+    padding: 0;
+    list-style: none;
+}
+.booking-date li {
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    color: #272b41;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.booking-date li span {
+    float: right;
+    color: #757575;
+    font-weight: 400;
+    font-size: 15px;
+}
+.booking-fee li {
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    color: #272b41;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.booking-fee li span {
+    float: right;
+    color: #757575;
+    font-weight: 400;
+    font-size: 15px;
+}
+.booking-total {
+    padding-top: 10px;
+}
+
+.booking-total ul li span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #272b41;
+}
+.booking-total .total-cost {
+    font-size: 16px;
+    font-weight: 700;
+}
+.checkmark {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.invoice-section{
+    background: var(--bgColor);
+    border: 1.5px solid var(--borderColor);
+    box-shadow: var(--materialShadow);
+}
+
+.input-field-style{
+    border: 1.5px solid var(--borderLight) !important;
+    transition: all 0.35s ease !important;
+    background: var(--bgColor) !important;
+    border-radius: 30px !important;
+}
+
+.input-field-style:focus{
+    border-color: var(--borderColor) !important;
+    box-shadow: var(--shadow);
+}
+
+@media (max-width: 768px) {
+    .payment-options{
+        margin-top: 2rem;
+    }
+}

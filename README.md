@@ -8,6 +8,8 @@
 
 Nirog Sathi is a full-stack MERN application designed to streamline the process of scheduling and managing appointments for doctors, patients, and administrators. With a premium, modern look powered by Ant Design components, this platform provides an intuitive, role-based interface that enhances the user experience for all stakeholders. 🚀🛡
 
+<p align="center"><img src="https://github.com/user-attachments/assets/6e054835-30a6-49df-b33e-d598c0323786" alt="Nirog Sathi" /></p>
+
 ---
 
 ## Table of Contents
@@ -167,11 +169,11 @@ Nirog Sathi is a comprehensive healthcare management system that caters to the n
 
 After starting the application, navigate to the appropriate dashboard based on your role:
 
-  - Admin Dashboard: http://localhost:3000/admin
+  - Admin Dashboard: http://localhost:3000/admin/dashboard
 
-  - Doctor Dashboard: http://localhost:3000/doctor
+  - Doctor Dashboard: http://localhost:3000/dashboard/appointments
 
-  - Patient Dashboard: http://localhost:3000/patient
+  - Patient Dashboard: http://localhost:3000/dashboard/
 
 ---
 

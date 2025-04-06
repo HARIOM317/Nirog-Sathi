@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg?style=for-the-badge)](https://github.com/HARIOM317/Nirog-Sathi) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE) 
-[![Repo Size](https://img.shields.io/badge/repo%20size-25MB-blue.svg?style=for-the-badge)](https://github.com/HARIOM317/Nirog-Sathi) 
+[![Repo Size](https://img.shields.io/badge/repo%20size-5MB-blue.svg?style=for-the-badge)](https://github.com/HARIOM317/Nirog-Sathi) 
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-orange.svg?style=for-the-badge)](https://github.com/HARIOM317/Nirog-Sathi)
 
 

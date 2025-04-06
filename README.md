@@ -11,18 +11,19 @@ Nirog Sathi is a full-stack MERN application designed to streamline the process 
 ---
 
 ## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [🧑🏼‍💻 Overview](#-overview)
+- [✨ Features](#-features)
+- [📸 Project Screenshots](#-project-screenshots)
+- [🛠 Tech Stack](#-tech-stack)
+- [⚙ Installation & Setup](#-installation--setup)
+- [🚀 Usage](#-usage)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
+- [📩 Contact](#-contact)
 
 ---
 
-## Overview
+## 🧑🏼‍💻 Overview
 Nirog Sathi is a comprehensive healthcare management system that caters to the needs of doctors, patients, and administrators by providing:
 - A user-friendly, role-based interface.
 - Advanced scheduling capabilities, including auto-generation of 15-minute time slots for doctors.
@@ -31,25 +32,31 @@ Nirog Sathi is a comprehensive healthcare management system that caters to the n
 
 ---
 
-## Features
-- 🛡 **Admin Dashboard**
+## ✨ Features
+- **Admin Dashboard**
   - Manage user roles and permissions.
   - Oversee overall system operations.
-- 🛡 **Doctor Dashboard**
+
+- **Doctor Dashboard**
   - View and manage their schedule.
   - Handle appointments efficiently with auto-generated 15-minute time slots.
   - Interact directly with patients.
-- 🛡 **Patient Dashboard**
+
+- **Patient Dashboard**
   - Book appointments easily.
   - Review appointment history.
   - Communicate with doctors.
-- 🛡 **Digital Prescription & Invoice**
+
+- **Digital Prescription & Invoice**
   - Seamless generation of digital prescriptions and invoices.
-- 🛡 **Payment Integration**
+
+- **Payment Integration**
   - Integrated Rezopay payment gateway for secure transactions.
-- 🛡 **Advanced Search & Filter**
+ 
+- **Advanced Search & Filter**
   - Find doctors by expertise, experience, and more.
-- 🛡 **Additional Functionalities**
+
+- **Additional Functionalities**
   - Favorite doctors list.
   - Option for patients to share past medical history with new doctors.
   - Blog publishing feature for doctors.
@@ -60,7 +67,24 @@ Nirog Sathi is a comprehensive healthcare management system that caters to the n
 
 ---
 
-## Tech Stack
+## 📸 Project Screenshots
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/a7d0c3ec-2815-4e64-bfb6-267cf77b6c63" alt="doctor appointment nirog sathi" width="400" />
+  <img src="https://github.com/user-attachments/assets/85dda2a7-1d2e-4aa6-8276-1954bd1eddd4" alt="doctor appointment nirog sathi" width="400" />
+  <img src="https://github.com/user-attachments/assets/f7df732c-67c9-49b5-8223-369d8888ff29" alt="doctor appointment nirog sathi" width="400" />
+  <img src="https://github.com/user-attachments/assets/b7c648a2-a291-42b0-a56a-e5d55c7ebe15" alt="doctor appointment nirog sathi" width="400" />
+  <img src="https://github.com/user-attachments/assets/fc3caa43-ed0c-40ea-909b-3c22b8e4026e" alt="doctor appointment nirog sathi" width="400" />
+  <img src="https://github.com/user-attachments/assets/495e9bbb-239b-4477-907b-574604fcb6e9" alt="doctor appointment nirog sathi" width="400" />
+  <img src="https://github.com/user-attachments/assets/51894e37-aa27-48e9-b98d-3454691b8c66" alt="doctor appointment nirog sathi" width="400" />
+  <img src="https://github.com/user-attachments/assets/f4cef9ea-9a6f-4a04-9a6c-83ed5b37dc5c" alt="doctor appointment nirog sathi" width="400" />
+  <img src="https://github.com/user-attachments/assets/2c3d6a8e-a45d-4cb6-b083-d31278d92b56" alt="doctor appointment nirog sathi" width="400" />
+  <img src="https://github.com/user-attachments/assets/1e11a0a0-b116-4ff1-a9a9-9ee817460604" alt="doctor appointment nirog sathi" width="400" />
+</div>
+
+---
+
+## 🛠 Tech Stack
 - **Frontend:** React, Ant Design 🎨
 - **Backend:** Node.js, Express.js 🛠
 - **Database:** MongoDB 🗄
@@ -69,7 +93,7 @@ Nirog Sathi is a comprehensive healthcare management system that caters to the n
 
 ---
 
-## Installation
+## ⚙ Installation & Setup
 
 ### Prerequisites
 - **Node.js** (v16+)
@@ -139,7 +163,7 @@ Nirog Sathi is a comprehensive healthcare management system that caters to the n
 
 ---
 
-## Usage
+## 🚀 Usage
 
 After starting the application, navigate to the appropriate dashboard based on your role:
 

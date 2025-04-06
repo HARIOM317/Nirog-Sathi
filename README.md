@@ -1,6 +1,12 @@
 # Nirog Sathi - Comprehensive Healthcare Management Platform
 
-Nirog Sathi is a full stack MERN application designed to streamline the process of scheduling and managing appointments for doctors, patients, and administrators. With a premium, modern look powered by Ant Design components, this platform provides an intuitive, role-based interface that enhances the user experience for all stakeholders. 🚀🛡
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg?style=for-the-badge)](https://github.com/HARIOM317/Nirog-Sathi) 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE) 
+[![Repo Size](https://img.shields.io/badge/repo%20size-25MB-blue.svg?style=for-the-badge)](https://github.com/HARIOM317/Nirog-Sathi) 
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-orange.svg?style=for-the-badge)](https://github.com/HARIOM317/Nirog-Sathi)
+
+
+Nirog Sathi is a full-stack MERN application designed to streamline the process of scheduling and managing appointments for doctors, patients, and administrators. With a premium, modern look powered by Ant Design components, this platform provides an intuitive, role-based interface that enhances the user experience for all stakeholders. 🚀🛡
 
 ---
 
@@ -20,7 +26,7 @@ Nirog Sathi is a full stack MERN application designed to streamline the process 
 Nirog Sathi is a comprehensive healthcare management system that caters to the needs of doctors, patients, and administrators by providing:
 - A user-friendly, role-based interface.
 - Advanced scheduling capabilities, including auto-generation of 15-minute time slots for doctors.
-- Robust features like digital prescriptions, digital invoices, and Rezopay payment gateway integration.
+- Robust features like digital prescriptions, invoices, and Rezopay payment gateway integration.
 - Tools for detailed data analysis and insights via advanced graphs and charts.
 
 ---
@@ -66,37 +72,68 @@ Nirog Sathi is a comprehensive healthcare management system that caters to the n
 ## Installation
 
 ### Prerequisites
-- **Node.js** (v14+)
+- **Node.js** (v16+)
 - **MongoDB**
 - **npm** or **yarn**
 
 ### Steps
 1. **Clone the repository:**
 
-   ```
-   git clone https://github.com/yourusername/nirog-sathi.git
-   cd nirog-sathi
+   ```bash
+   git clone https://github.com/HARIOM317/Nirog-Sathi.git
+   cd Nirog-Sathi
    ```
 
    
 2. **Install dependencies:**
 
-    ```
+    ```bash
     npm install
     ```
 
 3. **Configure environment variables:** Create a .env file in the root directory and add the following variables:
-
-    ```
-    MONGODB_URI=your_mongodb_connection_string
-    JWT_SECRET=your_jwt_secret
-    REZOPAY_KEY=your_rezopay_key
+    ```env
+    # MongoDB Connection
+    DATABASE_URL=<your_mongodb_connection_string>
+    
+    # JSON Web Token (JWT) configuration
+    JWT=<your_jwt_token>
+    JWT_SCRET=<your_jwt_secret>
+    JWT_EXPIRED_IN=<jwt_expiration_time>         # e.g., 30d
+    JWT_REFRESH_SECRET=<your_jwt_refresh_secret>
+    JWT_SCRET_SALT_ROUND=<salt_round_number>       # e.g., 10
+    
+    # Server configuration
+    PORT=<your_app_port>                           # e.g., 5000
+    NODE_ENV=<your_environment>                    # e.g., production or development
+    
+    # Default passwords for roles (ensure to change for production)
+    DOCTOR_PASS=<default_doctor_password>
+    PATIENT_PASS=<default_patient_password>
+    
+    # Cloudinary configuration
+    CLOUND_NAME=<your_cloudinary_cloud_name>
+    API_KEY=<your_cloudinary_api_key>
+    API_SECRET=<your_cloudinary_api_secret>
+    
+    # Email configuration
+    EMAIL_PASS=<your_cloudnarry_email_password>
+    ADMIN_EMAIL=<your_cloudnary_email_address>
+    GMAIL_APP_EMAIL=<gmail_app_email_address>
+    
+    # Client URLs
+    CLIENT_URL=<your_client_url>                   # e.g., http://localhost:3000/
+    CLIENT__LOCAL_URL=<your_client_local_url>        # e.g., http://localhost:3000/
+    
+    # Razorpay configuration
+    RAZORPAY_API_KEY=<your_razorpay_api_key>
+    RAZORPAY_APT_SECRET=<your_razorpay_api_secret>
     ```
 
 
 4. **Run the application:**
 
-    ```
+    ```bash
     npm start
     ```
 
@@ -114,30 +151,51 @@ After starting the application, navigate to the appropriate dashboard based on y
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
-We welcome contributions! To contribute:
+We ❤️ contributions! Follow these steps:
 
-  - Fork the repository.
-
-  - Create a new branch for your feature or bug fix.
-
-  - Commit your changes with clear messages.
-
-  - Open a Pull Request for review.
+1. **Fork the Repository**
+2. **Clone Your Fork**
+    ```bash
+    git clone https://github.com/HARIOM317/Nirog-Sathi.git
+    cd Nirog-Sathi
+    ```
+3. **Create a New Branch**
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+4. **Make Your Changes & Commit**
+    ```bash
+    git add .
+    git commit -m "✨ Add [feature/fix]: description"
+    ```
+5. **Push to Your Fork & Create a PR**
+    ```bash
+    git push origin feature/your-feature-name
+    ```
+6. **Submit a Pull Request** on GitHub 🚀
 
 ---
 
-## License
-This project is licensed under the MIT License.
+## 📜 License
+
+**Nirog Sathi** is licensed under the **MIT License**. You can view the Full License (here)(LICENSE).
 
 ---
 
-## Contact
-For further inquiries or support, please reach out:
+## 📩 Contact
 
-Email: support@nirog-sathi.com
+For further information, feedback, or support, please reach out:
 
-GitHub: yourusername
+📧 Email: [support@nirog-sathi.com](mailto:support@nirog-sathi.com)
 
-Enjoy a seamless healthcare experience with Nirog Sathi! 🚀🛡
+🌐 Website: [www.nirogsathi.com](https://www.nirogsathi.com)
+
+Or you can reach out to me at:
+  - Project Maintainer: Hariom Singh Rajput
+  - GitHub: [@HARIOM317](https://github.com/HARIOM317)
+  - LinkedIn: [@in/hariom-singh-mewada](https://www.linkedin.com/in/hariom-singh-mewada/)
+
+
+🚀 **Nirog Sathi – Enjoy a seamless healthcare experience with Nirog Sathi! 🚀🛡.**

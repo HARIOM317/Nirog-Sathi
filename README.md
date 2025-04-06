@@ -206,7 +206,7 @@ We ❤️ contributions! Follow these steps:
 
 ## 📜 License
 
-**Nirog Sathi** is licensed under the **MIT License**. You can view the Full License (here)(LICENSE).
+**Nirog Sathi** is licensed under the **MIT License**. You can view the Full License [here](LICENSE).
 
 ---
 
